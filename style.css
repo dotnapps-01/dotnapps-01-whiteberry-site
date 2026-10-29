@@ -108,7 +108,7 @@ svg{display:block}
 .js .frame.in img{scale:1}
 
 /* ───── loader ───── */
-.loader{position:fixed;inset:0;z-index:200;background:var(--ivory);display:grid;place-items:center;transition:transform 1.3s cubic-bezier(.77,0,.18,1);will-change:transform}
+.loader{position:fixed;inset:0;z-index:200;background:var(--ivory);display:grid;place-items:center;transition:transform .9s cubic-bezier(.77,0,.18,1);will-change:transform;cursor:pointer}
 body:not(.is-loading) .loader{transform:translateY(-100%);pointer-events:none}
 body.is-done .loader{display:none}
 @keyframes draw{to{transform:scaleX(1)}}
@@ -162,13 +162,13 @@ body.is-done .loader{display:none}
 .logo--tag{--ls:11px}
 .logo--loader{--ls:clamp(22px,4.6vw,44px)}
 .logo--loader .lg-nm span{display:inline-block;opacity:0;transform:translateY(60%);animation:rise 1s var(--ease) forwards}
-.logo--loader .lg-nm span:nth-child(1){animation-delay:1.0s}.logo--loader .lg-nm span:nth-child(2){animation-delay:1.06s}.logo--loader .lg-nm span:nth-child(3){animation-delay:1.12s}.logo--loader .lg-nm span:nth-child(4){animation-delay:1.18s}.logo--loader .lg-nm span:nth-child(5){animation-delay:1.24s}
-.logo--loader .lg-nm span:nth-child(6){animation-delay:1.3s}.logo--loader .lg-nm span:nth-child(7){animation-delay:1.36s}.logo--loader .lg-nm span:nth-child(8){animation-delay:1.42s}.logo--loader .lg-nm span:nth-child(9){animation-delay:1.48s}.logo--loader .lg-nm span:nth-child(10){animation-delay:1.54s}
-.logo--loader .lg-st .dash{transform:scaleX(0);animation:draw 1.2s var(--ease) .2s forwards}
+.logo--loader .lg-nm span:nth-child(1){animation-delay:0.5s}.logo--loader .lg-nm span:nth-child(2){animation-delay:0.53s}.logo--loader .lg-nm span:nth-child(3){animation-delay:0.56s}.logo--loader .lg-nm span:nth-child(4){animation-delay:0.59s}.logo--loader .lg-nm span:nth-child(5){animation-delay:0.62s}
+.logo--loader .lg-nm span:nth-child(6){animation-delay:0.65s}.logo--loader .lg-nm span:nth-child(7){animation-delay:0.68s}.logo--loader .lg-nm span:nth-child(8){animation-delay:0.71s}.logo--loader .lg-nm span:nth-child(9){animation-delay:0.74s}.logo--loader .lg-nm span:nth-child(10){animation-delay:0.77s}
+.logo--loader .lg-st .dash{transform:scaleX(0);animation:draw 1.2s var(--ease) 0.10s forwards}
 .logo--loader .lg-st .bloom{opacity:0;transform:scale(0) rotate(-90deg);animation:pop .9s var(--ease) forwards}
-.logo--loader .lg-st .bloom:nth-of-type(1){animation-delay:.6s}.logo--loader .lg-st .bloom:nth-of-type(2){animation-delay:.78s}.logo--loader .lg-st .bloom:nth-of-type(3){animation-delay:.96s}
-.logo--loader .lg-tg{opacity:0;animation:fade 1s ease 1.8s forwards}
-.logo--loader .lg-ln{transform:scaleX(0);transform-origin:50% 50%;animation:draw 1.2s var(--ease) 1.9s forwards}
+.logo--loader .lg-st .bloom:nth-of-type(1){animation-delay:0.3s}.logo--loader .lg-st .bloom:nth-of-type(2){animation-delay:0.39s}.logo--loader .lg-st .bloom:nth-of-type(3){animation-delay:0.48s}
+.logo--loader .lg-tg{opacity:0;animation:fade 1s ease 0.90s forwards}
+.logo--loader .lg-ln{transform:scaleX(0);transform-origin:50% 50%;animation:draw 1.2s var(--ease) 0.95s forwards}
 @keyframes rise{to{opacity:1;transform:none}}
 @keyframes fade{to{opacity:1}}
 /* footer: the logo at full scale, name in gold foil on navy */
@@ -526,3 +526,9 @@ body.is-ready .tri-in::before{clip-path:inset(0)}
   .vine .lf{opacity:.75!important}.vine .vb{transform:none!important}
   .sparkles{display:none}
 }
+
+/* shop sits right under the hero — tighter spacing, highlighted link */
+#shop{padding-top:clamp(50px,6vw,90px)}
+.nav-links .nav-shop{font-weight:500}
+.nav-links .nav-shop::after{transform:scaleX(1);background:var(--gold-lt)}
+.nav.stuck .nav-links .nav-shop::after{background:var(--gold)}

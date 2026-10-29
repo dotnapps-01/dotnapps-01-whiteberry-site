@@ -53,11 +53,13 @@
     body.classList.remove('is-loading');
     body.classList.add('is-ready');
     try { sessionStorage.setItem('wb-intro-v3', '1'); } catch (e) {}
-    setTimeout(() => body.classList.add('is-done'), 1500);
-    setTimeout(initReveal, reduce ? 0 : 500);
-    setTimeout(countUp, reduce ? 0 : 1200);
+    setTimeout(() => body.classList.add('is-done'), 1000);
+    setTimeout(initReveal, reduce ? 0 : 250);
+    setTimeout(countUp, reduce ? 0 : 700);
   }
-  setTimeout(startSite, reduce ? 0 : seen ? 250 : 2900);
+  setTimeout(startSite, reduce ? 0 : seen ? 120 : 1500);
+  // tap the intro to skip it
+  $('.loader').addEventListener('click', startSite);
 
   /* ─── reveal on scroll ─── */
   function initReveal() {
