@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="shop.css">
 </head>
 <body>
 <script>document.documentElement.classList.add('js');document.body.classList.add('is-loading');</script>
@@ -42,9 +43,10 @@
 <header class="nav" id="nav">
   <a class="brand" href="#top" aria-label="Whiteberry — home"><span class="logo logo--nav"><span class="lg-st"><i class="dash dash--l"></i><svg class="bloom"><use href="#bloom"/></svg><svg class="bloom"><use href="#bloom"/></svg><svg class="bloom"><use href="#bloom"/></svg><i class="dash dash--r"></i></span><span class="lg-nm">WHITEBERRY</span><span class="lg-tg">Elegance in every stitch</span><i class="lg-ln"></i></span></a>
   <nav class="nav-links" id="navmenu" aria-label="Primary">
-    <div class="grp"><a href="#collections">Collections</a><a href="#weaves">Weaves</a><a href="#lookbook">Lookbook</a></div>
+    <div class="grp"><a href="#collections">Collections</a><a href="#weaves">Weaves</a><a href="#shop">Shop</a></div>
     <div class="grp"><a href="#atelier">Atelier</a><a href="#contact">Visit</a><a href="#contact" class="nav-cta" data-enquire="">Enquire</a></div>
   </nav>
+  <button class="bag" id="bagBtn" type="button" aria-label="Open bag, 0 items"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2"/></svg><b class="bag-n">0</b></button>
   <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><i></i><i></i></button>
 </header>
 
@@ -62,11 +64,11 @@
       <h1 class="display" data-split>Elegance in every <em class="foil">stitch</em></h1>
       <p class="lede" data-reveal style="--d:.3">Half sarees, pleated pavadai sets and flowing anarkalis with painted kalamkari dupattas — chosen for the way they fall, finished for the days you’ll remember.</p>
       <div class="hero-cta" data-reveal style="--d:.45">
-        <a class="btn btn--gold" href="#collections"><span>Explore the collection</span></a>
+        <a class="btn btn--gold" href="#collections"><span>Shop the collection</span></a>
         <a class="link link--lt" href="#contact" data-enquire=""><span>Enquire on WhatsApp</span><svg class="arr"><use href="#arrow"/></svg></a>
       </div>
       <dl class="hero-stats" data-reveal style="--d:.6">
-        <div><dt data-to="15">0</dt><dd>Designs in the lookbook</dd></div>
+        <div><dt data-to="15">0</dt><dd>Designs in the shop</dd></div>
         <div><dt data-to="4">0</dt><dd>Collections</dd></div>
         <div><dt data-to="6">0</dt><dd>Colour families</dd></div>
       </dl>
@@ -140,22 +142,22 @@
       <ul class="coll-list" id="collList">
         <li class="coll-row is-on" data-i="0" data-cat="half" tabindex="0">
           <span class="coll-n">01</span>
-          <div class="coll-t"><h3>Half Sarees</h3><p>Zari-checked pallus over temple-bordered pavadai, pinned and pleated to fall just right.</p><a class="link" href="#lookbook" data-cat="half"><span>View pieces</span><svg class="arr"><use href="#arrow"/></svg></a>
+          <div class="coll-t"><h3>Half Sarees</h3><p>Zari-checked pallus over temple-bordered pavadai, pinned and pleated to fall just right.</p><a class="link" href="#shop" data-cat="half"><span>View pieces</span><svg class="arr"><use href="#arrow"/></svg></a>
             <div class="coll-inline frame" style="--bg:var(--ivory)"><img src="img/halfsaree-front.jpg" alt="Half Sarees" width="900" height="1298" loading="lazy"></div></div>
         </li>
         <li class="coll-row" data-i="1" data-cat="skirt" tabindex="0">
           <span class="coll-n">02</span>
-          <div class="coll-t"><h3>Pavadai &amp; Skirt Sets</h3><p>Fully pleated skirts in festive prints, with collared, scalloped or puff-sleeve crop blouses.</p><a class="link" href="#lookbook" data-cat="skirt"><span>View pieces</span><svg class="arr"><use href="#arrow"/></svg></a>
+          <div class="coll-t"><h3>Pavadai &amp; Skirt Sets</h3><p>Fully pleated skirts in festive prints, with collared, scalloped or puff-sleeve crop blouses.</p><a class="link" href="#shop" data-cat="skirt"><span>View pieces</span><svg class="arr"><use href="#arrow"/></svg></a>
             <div class="coll-inline frame" style="--bg:var(--ivory)"><img src="img/skirt-olive.jpg" alt="Pavadai &amp; Skirt Sets" width="760" height="1144" loading="lazy"></div></div>
         </li>
         <li class="coll-row" data-i="2" data-cat="anarkali" tabindex="0">
           <span class="coll-n">03</span>
-          <div class="coll-t"><h3>Anarkali Sets</h3><p>Flowing anarkalis with painted kalamkari dupattas — peacocks, lotuses and vines in every colour.</p><a class="link" href="#lookbook" data-cat="anarkali"><span>View pieces</span><svg class="arr"><use href="#arrow"/></svg></a>
+          <div class="coll-t"><h3>Anarkali Sets</h3><p>Flowing anarkalis with painted kalamkari dupattas — peacocks, lotuses and vines in every colour.</p><a class="link" href="#shop" data-cat="anarkali"><span>View pieces</span><svg class="arr"><use href="#arrow"/></svg></a>
             <div class="coll-inline frame" style="--bg:var(--ivory)"><img src="img/anarkali-teal.jpg" alt="Anarkali Sets" width="760" height="1039" loading="lazy"></div></div>
         </li>
         <li class="coll-row" data-i="3" data-cat="kurta" tabindex="0">
           <span class="coll-n">04</span>
-          <div class="coll-t"><h3>Kurta &amp; Palazzo Sets</h3><p>Easy kurtas with butta work, printed palazzos and a dupatta to finish the look.</p><a class="link" href="#lookbook" data-cat="kurta"><span>View pieces</span><svg class="arr"><use href="#arrow"/></svg></a>
+          <div class="coll-t"><h3>Kurta &amp; Palazzo Sets</h3><p>Easy kurtas with butta work, printed palazzos and a dupatta to finish the look.</p><a class="link" href="#shop" data-cat="kurta"><span>View pieces</span><svg class="arr"><use href="#arrow"/></svg></a>
             <div class="coll-inline frame" style="--bg:var(--ivory)"><img src="img/kurta-red.jpg" alt="Kurta &amp; Palazzo Sets" width="760" height="1018" loading="lazy"></div></div>
         </li>
       </ul>
@@ -222,186 +224,29 @@
   <div class="wrap"><div class="car-bar" aria-hidden="true"><i id="carBar"></i></div></div>
 </section>
 
-<!-- ───────────── LOOKBOOK ───────────── -->
-<section class="section" id="lookbook">
+<!-- ───────────── SHOP ───────────── -->
+<section class="section" id="shop">
   <div class="wrap">
     <header class="sec-head sec-head--row">
       <div>
-        <p class="kicker" data-reveal><i></i>The lookbook</p>
-        <h2 class="h2" data-split>Shop the <em>colour story</em></h2>
+        <p class="kicker" data-reveal><i></i>The shop</p>
+        <h2 class="h2" data-split>Choose your <em>drape</em></h2>
       </div>
-      <div class="swatches" data-reveal role="group" aria-label="Filter by colour"><button type="button" class="sw is-on" data-filter="all" title="All colours" aria-label="All colours"><i style="--c:conic-gradient(#142194,#D6417F,#E8761B,#1F7A5C,#142194)"></i><span>All colours</span></button><button type="button" class="sw" data-filter="red" title="Maroon &amp; red" aria-label="Maroon &amp; red"><i style="--c:#8E1B2E"></i><span>Maroon &amp; red</span></button><button type="button" class="sw" data-filter="pink" title="Pink &amp; magenta" aria-label="Pink &amp; magenta"><i style="--c:#C0357A"></i><span>Pink &amp; magenta</span></button><button type="button" class="sw" data-filter="orange" title="Saffron" aria-label="Saffron"><i style="--c:#E8761B"></i><span>Saffron</span></button><button type="button" class="sw" data-filter="green" title="Green &amp; teal" aria-label="Green &amp; teal"><i style="--c:#1F7A5C"></i><span>Green &amp; teal</span></button><button type="button" class="sw" data-filter="blue" title="Navy &amp; blue" aria-label="Navy &amp; blue"><i style="--c:#142194"></i><span>Navy &amp; blue</span></button></div>
+      <div class="swatches" data-reveal id="shopSwatches" role="group" aria-label="Filter by colour"></div>
     </header>
-    <div class="tabs" role="tablist" aria-label="Filter by type"><button type="button" role="tab" class="tab is-on" data-cat="all" aria-selected="true">All<i data-count></i></button><button type="button" role="tab" class="tab" data-cat="half" aria-selected="false">Half sarees<i data-count></i></button><button type="button" role="tab" class="tab" data-cat="skirt" aria-selected="false">Skirt sets<i data-count></i></button><button type="button" role="tab" class="tab" data-cat="anarkali" aria-selected="false">Anarkali sets<i data-count></i></button><button type="button" role="tab" class="tab" data-cat="kurta" aria-selected="false">Kurta sets<i data-count></i></button></div>
-
-    <div class="pieces" id="pieces">
-      <article class="piece" data-cat="half" data-colors="red green" data-reveal style="--d:0.00">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/halfsaree-pose.jpg" alt="Maroon Check Half Saree" width="900" height="1427" loading="lazy"><img class="swap" src="img/halfsaree-front.jpg" alt="" width="900" height="1298" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Half saree</p>
-          <h3>Maroon Check Half Saree</h3>
-          <p class="desc">Gold-lined maroon check over an olive pavadai with a lotus-motif zari border.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#7B1E2B"></i><i style="--c:#6C6A49"></i><i style="--c:#B39A55"></i></span><button type="button" class="link link--btn" data-enquire="Maroon Check Half Saree"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="skirt" data-colors="blue red" data-reveal style="--d:0.10">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/set-navy.jpg" alt="Navy Pleats &amp; Maroon Check" width="900" height="1369" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Skirt set</p>
-          <h3>Navy Pleats &amp; Maroon Check</h3>
-          <p class="desc">Deep navy skirt scattered with gold buttas, with a puff-sleeve blouse and scalloped neckline.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#142194"></i><i style="--c:#7B1E2B"></i><i style="--c:#B39A55"></i></span><button type="button" class="link link--btn" data-enquire="Navy Pleats &amp; Maroon Check"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="skirt" data-colors="green red" data-reveal style="--d:0.20">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/set-mint.jpg" alt="Mint Pleats &amp; Scalloped Blouse" width="900" height="1366" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Skirt set</p>
-          <h3>Mint Pleats &amp; Scalloped Blouse</h3>
-          <p class="desc">Soft mint check skirt with a red butta blouse, edged in mint scallops at neck and sleeves.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#A8C8B2"></i><i style="--c:#9A1B2A"></i><i style="--c:#B39A55"></i></span><button type="button" class="link link--btn" data-enquire="Mint Pleats &amp; Scalloped Blouse"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="skirt" data-colors="green" data-reveal style="--d:0.00">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/skirt-olive.jpg" alt="Olive Pleats &amp; Cream Collar Top" width="760" height="1144" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Skirt set</p>
-          <h3>Olive Pleats &amp; Cream Collar Top</h3>
-          <p class="desc">Printed olive-green pleated skirt with a cream silk crop top and a notched collar.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#7A9B1E"></i><i style="--c:#F2E6C4"></i></span><button type="button" class="link link--btn" data-enquire="Olive Pleats &amp; Cream Collar Top"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="anarkali" data-colors="blue red" data-reveal style="--d:0.10">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/anarkali-navy.jpg" alt="Navy Check Anarkali, Kalamkari Dupatta" width="900" height="1311" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Anarkali set</p>
-          <h3>Navy Check Anarkali, Kalamkari Dupatta</h3>
-          <p class="desc">Gold-checked navy anarkali with a red hem and a red-bordered kalamkari dupatta.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#2A2F6B"></i><i style="--c:#B3261E"></i><i style="--c:#F2E6C4"></i></span><button type="button" class="link link--btn" data-enquire="Navy Check Anarkali, Kalamkari Dupatta"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="anarkali" data-colors="orange" data-reveal style="--d:0.20">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/anarkali-saffron.jpg" alt="Saffron Anarkali, Peacock Kalamkari" width="900" height="1276" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Anarkali set</p>
-          <h3>Saffron Anarkali, Peacock Kalamkari</h3>
-          <p class="desc">Saffron butta anarkali with a peacock-and-vine kalamkari dupatta in orange and violet.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#E8761B"></i><i style="--c:#8A6BC4"></i><i style="--c:#E3C45B"></i></span><button type="button" class="link link--btn" data-enquire="Saffron Anarkali, Peacock Kalamkari"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="anarkali" data-colors="green pink" data-reveal style="--d:0.00">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/anarkali-teal.jpg" alt="Teal Anarkali, Pink Kalamkari" width="760" height="1039" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Anarkali set</p>
-          <h3>Teal Anarkali, Pink Kalamkari</h3>
-          <p class="desc">Scalloped-neck teal anarkali with a bright pink kalamkari dupatta of birds and leaves.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#1E7C8C"></i><i style="--c:#D6417F"></i><i style="--c:#8FD14F"></i></span><button type="button" class="link link--btn" data-enquire="Teal Anarkali, Pink Kalamkari"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="anarkali" data-colors="pink blue" data-reveal style="--d:0.10">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/anarkali-magenta.jpg" alt="Magenta Anarkali, Storybook Kalamkari" width="760" height="1061" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Anarkali set</p>
-          <h3>Magenta Anarkali, Storybook Kalamkari</h3>
-          <p class="desc">Magenta anarkali with a sky-blue kalamkari dupatta painted with chariots and courtly scenes.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#A1226B"></i><i style="--c:#54A9D6"></i><i style="--c:#E3C45B"></i></span><button type="button" class="link link--btn" data-enquire="Magenta Anarkali, Storybook Kalamkari"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="anarkali" data-colors="green pink" data-reveal style="--d:0.20">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/anarkali-temple.jpg" alt="Peacock-Green Temple Border Anarkali" width="760" height="1120" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Anarkali set</p>
-          <h3>Peacock-Green Temple Border Anarkali</h3>
-          <p class="desc">Magenta-and-gold temple border on the yoke and hem of a peacock-green anarkali, with matching dupatta.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#1F7A5C"></i><i style="--c:#A1226B"></i><i style="--c:#B39A55"></i></span><button type="button" class="link link--btn" data-enquire="Peacock-Green Temple Border Anarkali"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="anarkali" data-colors="red green" data-reveal style="--d:0.00">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/anarkali-wine.jpg" alt="Wine Anarkali, Lotus Kalamkari" width="760" height="1049" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Anarkali set</p>
-          <h3>Wine Anarkali, Lotus Kalamkari</h3>
-          <p class="desc">Wine anarkali with an olive-green kalamkari dupatta of pink lotuses and peacocks.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#5E1424"></i><i style="--c:#7E8C4A"></i><i style="--c:#E8A0B8"></i></span><button type="button" class="link link--btn" data-enquire="Wine Anarkali, Lotus Kalamkari"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="kurta" data-colors="green pink" data-reveal style="--d:0.10">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/kurta-mint.jpg" alt="Mint Kurta, Printed Palazzo" width="760" height="1040" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Kurta set</p>
-          <h3>Mint Kurta, Printed Palazzo</h3>
-          <p class="desc">Mint butta kurta with a lilac printed palazzo and a block-print dupatta.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#6FCDB0"></i><i style="--c:#B79AD6"></i><i style="--c:#B3261E"></i></span><button type="button" class="link link--btn" data-enquire="Mint Kurta, Printed Palazzo"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="kurta" data-colors="red blue" data-reveal style="--d:0.20">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/kurta-red.jpg" alt="Red Kurta, Indigo Palazzo" width="760" height="1018" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Kurta set</p>
-          <h3>Red Kurta, Indigo Palazzo</h3>
-          <p class="desc">Scalloped-neck red kurta with an indigo printed palazzo and a cream kalamkari dupatta.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#C8102E"></i><i style="--c:#2C4E8F"></i><i style="--c:#E9D3B4"></i></span><button type="button" class="link link--btn" data-enquire="Red Kurta, Indigo Palazzo"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="kurta" data-colors="green orange" data-reveal style="--d:0.00">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/kurta-green.jpg" alt="Green Butta Kurta, Rust Palazzo" width="760" height="1117" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Kurta set</p>
-          <h3>Green Butta Kurta, Rust Palazzo</h3>
-          <p class="desc">Bottle-green kurta with floral buttas and a rust-and-plum printed palazzo.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#1E7A4A"></i><i style="--c:#D2693A"></i><i style="--c:#6B2B5E"></i></span><button type="button" class="link link--btn" data-enquire="Green Butta Kurta, Rust Palazzo"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="kurta" data-colors="green pink" data-reveal style="--d:0.10">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/kurta-olive.jpg" alt="Olive &amp; Wine Colour-block Kurta" width="760" height="1120" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Kurta set</p>
-          <h3>Olive &amp; Wine Colour-block Kurta</h3>
-          <p class="desc">Olive and wine colour-block kurta with a sheer striped dupatta.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#7A8A1E"></i><i style="--c:#7E1F5E"></i><i style="--c:#E3C45B"></i></span><button type="button" class="link link--btn" data-enquire="Olive &amp; Wine Colour-block Kurta"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
-      <article class="piece" data-cat="kurta" data-colors="red" data-reveal style="--d:0.20">
-        <div class="piece-media frame" style="--bg:var(--sand)">
-          <img class="base" src="img/kurta-maroon.jpg" alt="Maroon Check-panel Kurta" width="760" height="1073" loading="lazy">
-        </div>
-        <div class="piece-info">
-          <p class="tag">Kurta set</p>
-          <h3>Maroon Check-panel Kurta</h3>
-          <p class="desc">Maroon kurta with gingham side panels and a matching dupatta.</p>
-          <div class="piece-foot"><span class="dots"><i style="--c:#7B1E2B"></i><i style="--c:#F2E6E6"></i><i style="--c:#B39A55"></i></span><button type="button" class="link link--btn" data-enquire="Maroon Check-panel Kurta"><span>Enquire</span><svg class="arr"><use href="#arrow"/></svg></button></div>
-        </div>
-      </article>
+    <div class="shop-bar">
+      <div class="tabs" id="shopTabs" role="tablist" aria-label="Filter by type"></div>
+      <div class="shop-sort"><span id="shopCount" aria-live="polite"></span>
+        <label class="sel"><span class="sr">Sort by</span><select id="shopSort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div>
     </div>
-    <p class="filter-note" id="filterNote" aria-live="polite"></p>
+    <div class="pieces" id="shopGrid"></div>
+    <div class="shop-empty" id="shopEmpty" hidden><p>Nothing here in that colour yet — we can make it for you.</p><button type="button" class="link" id="shopClear"><span>Clear filters</span><svg class="arr"><use href="#arrow"/></svg></button></div>
+    <ul class="trust" data-reveal>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13v9H3zM16 10h3l2 2v4h-5M7 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM18 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>Shipping across India</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20L20 4M16 6a2 2 0 100-3M7 21c6-1 12-7 13-13"/></svg>Made to your measure</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></svg>UPI · Cards · COD</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 01-12 7l-5 1 1-4a8 8 0 1116-4z"/></svg>Help on WhatsApp</li>
+    </ul>
   </div>
 </section>
 
@@ -474,7 +319,7 @@
       <h2 class="h2" data-split>Good to <em>know</em></h2>
       <p class="sub" data-reveal>Can’t find your answer? Message us — we reply personally.</p>
     </div>
-    <div class="faq" data-reveal><details class="qa" open><summary><span>How do I place an order?</span><i></i></summary><div class="qa-a"><p>Pick a piece from the lookbook and tap <b>Enquire</b> — it opens a WhatsApp message with your choice filled in. We reply with fabric options, colours and timelines.</p></div></details><details class="qa"><summary><span>Can pieces be stitched to my measurements?</span><i></i></summary><div class="qa-a"><p>That’s what Whiteberry is about — blouses, skirts and anarkalis are cut to your measure. Share your measurements when you enquire, or ask us how to take them.</p></div></details><details class="qa"><summary><span>Can I change the colour or the dupatta?</span><i></i></summary><div class="qa-a"><p>Often, yes. Tell us what you have in mind — a different dupatta, a contrast blouse, another colour of the same print — and we’ll confirm what’s possible.</p></div></details><details class="qa"><summary><span>How long will it take?</span><i></i></summary><div class="qa-a"><p>It depends on the piece and your date. Share the occasion date when you enquire and we’ll confirm a realistic timeline before you commit.</p></div></details><details class="qa"><summary><span>Do you deliver outside the city?</span><i></i></summary><div class="qa-a"><p>Ask us on WhatsApp — we’ll confirm delivery options for your location.</p></div></details></div>
+    <div class="faq" data-reveal><details class="qa" open><summary><span>How do I place an order?</span><i></i></summary><div class="qa-a"><p>Choose a piece, pick your size (or “Made to measure”), add it to your bag and check out. We then confirm your measurements, payment and delivery date with you on WhatsApp.</p></div></details><details class="qa"><summary><span>How can I pay?</span><i></i></summary><div class="qa-a"><p>At checkout you can confirm on WhatsApp and pay by UPI or a payment link, pay online, or choose cash on delivery — whichever options are shown at checkout are available for your order.</p></div></details><details class="qa"><summary><span>Can pieces be stitched to my measurements?</span><i></i></summary><div class="qa-a"><p>That’s what Whiteberry is about — blouses, skirts and anarkalis are cut to your measure. Share your measurements when you enquire, or ask us how to take them.</p></div></details><details class="qa"><summary><span>Can I change the colour or the dupatta?</span><i></i></summary><div class="qa-a"><p>Often, yes. Tell us what you have in mind — a different dupatta, a contrast blouse, another colour of the same print — and we’ll confirm what’s possible.</p></div></details><details class="qa"><summary><span>How long will it take?</span><i></i></summary><div class="qa-a"><p>It depends on the piece and your date. Share the occasion date when you enquire and we’ll confirm a realistic timeline before you commit.</p></div></details><details class="qa"><summary><span>Do you deliver outside the city?</span><i></i></summary><div class="qa-a"><p>Ask us on WhatsApp — we’ll confirm delivery options for your location.</p></div></details></div>
   </div>
 </section>
 
@@ -532,7 +377,7 @@
   <div class="wrap">
     <div class="foot-logo"><span class="logo logo--foot"><span class="lg-st"><i class="dash dash--l"></i><svg class="bloom"><use href="#bloom"/></svg><svg class="bloom"><use href="#bloom"/></svg><svg class="bloom"><use href="#bloom"/></svg><i class="dash dash--r"></i></span><span class="lg-nm">WHITEBERRY</span><span class="lg-tg">Elegance in every stitch</span><i class="lg-ln"></i></span></div>
     <nav class="foot-nav" aria-label="Footer">
-      <a href="#collections">Collections</a><a href="#weaves">Weaves</a><a href="#lookbook">Lookbook</a><a href="#atelier">Atelier</a><a href="#occasions">Occasions</a><a href="#faq">FAQ</a><a href="#contact">Visit</a>
+      <a href="#collections">Collections</a><a href="#weaves">Weaves</a><a href="#shop">Shop</a><a href="#atelier">Atelier</a><a href="#occasions">Occasions</a><a href="#faq">FAQ</a><a href="#contact">Visit</a>
     </nav>
     <p class="foot-copy">© <span id="yr">2026</span> Whiteberry. All rights reserved.</p>
   </div>
@@ -540,6 +385,9 @@
 
 <a class="fab" href="#contact" data-enquire="" aria-label="Enquire"><svg class="bloom"><use href="#bloom"/></svg><span>Enquire</span></a>
 
+<script src="config.js"></script>
+<script src="products.js"></script>
 <script src="app.js" defer></script>
+<script src="shop.js" defer></script>
 </body>
 </html>

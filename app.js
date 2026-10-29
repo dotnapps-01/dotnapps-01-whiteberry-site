@@ -2,11 +2,8 @@
 (() => {
   'use strict';
 
-  /* ─── Fill these in to switch the enquiry form + contact list on ───
-     whatsapp: country code + number, digits only  e.g. '919876543210'
-     instagram: handle without @                   e.g. 'whiteberry'
-     email / address: plain text                                          */
-  const CONFIG = { whatsapp: '', instagram: '', email: '', address: '' };
+  /* Store settings (WhatsApp, email, shipping, payments) live in config.js */
+  const CONFIG = window.WB_CONFIG || { whatsapp: '', instagram: '', email: '', address: '' };
 
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -285,62 +282,6 @@
       car.scrollTo({ left: Math.round(car.scrollLeft / s) * s, behavior: 'smooth' });
     });
     upd();
-  })();
-
-  /* ─── lookbook: filter by type (tabs) and by colour (swatches) ─── */
-  const sws = $$('.sw');
-  const tabs = $$('.tab');
-  const pieces = $$('.piece');
-  const note = $('#filterNote');
-  const state = { cat: 'all', colour: 'all' };
-
-  tabs.forEach((t) => {
-    const n = t.dataset.cat === 'all' ? pieces.length : pieces.filter((p) => p.dataset.cat === t.dataset.cat).length;
-    $('[data-count]', t).textContent = n;
-  });
-
-  function applyFilter(animate) {
-    let shown = 0;
-    pieces.forEach((p) => {
-      const inCat = state.cat === 'all' || p.dataset.cat === state.cat;
-      const inCol = state.colour === 'all' || p.dataset.colors.split(' ').includes(state.colour);
-      const was = p.classList.contains('gone');
-      p.classList.toggle('gone', !inCat);
-      p.classList.toggle('dim', inCat && !inCol);
-      if (inCat) {
-        shown++;
-        p.classList.add('in');
-        $$('.frame', p).forEach((f) => f.classList.add('in'));
-        if (animate && was) { p.classList.remove('pop'); void p.offsetWidth; p.classList.add('pop'); }
-      }
-    });
-    const lit = pieces.filter((p) => !p.classList.contains('gone') && !p.classList.contains('dim')).length;
-    note.textContent = state.colour === 'all' ? '' :
-      lit ? `${lit} of ${shown} pieces in ${$('span', $('.sw.is-on')).textContent.toLowerCase()}` :
-        'Nothing in this colour here yet — ask us, we can make it.';
-  }
-  function setCat(cat, animate = true) {
-    state.cat = cat;
-    tabs.forEach((t) => { const on = t.dataset.cat === cat; t.classList.toggle('is-on', on); t.setAttribute('aria-selected', on); });
-    applyFilter(animate);
-  }
-  tabs.forEach((t) => t.addEventListener('click', () => setCat(t.dataset.cat)));
-  sws.forEach((sw) => sw.addEventListener('click', () => {
-    state.colour = sw.dataset.filter;
-    sws.forEach((s) => s.classList.toggle('is-on', s === sw));
-    applyFilter(false);
-  }));
-  $$('#collections a[data-cat]').forEach((a) => a.addEventListener('click', () => setCat(a.dataset.cat)));
-
-  // enquiry form: the piece list comes straight from the lookbook
-  (function fillPieces() {
-    const sel = $('#f-piece');
-    const custom = sel.lastElementChild;
-    pieces.forEach((p) => {
-      const o = document.createElement('option');
-      o.textContent = $('h3', p).textContent;
-      sel.insertBefore(o, custom);
-    });
   })();
 
   /* ─── occasions: a photograph follows the cursor ─── */

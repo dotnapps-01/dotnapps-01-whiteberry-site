@@ -1,0 +1,55 @@
+/* Whiteberry — product catalogue. Edit this file to add / change pieces.
+   PRICES AND "INCLUDES" LINES ARE PLACEHOLDERS — replace with your real ones.
+   cat: half | skirt | anarkali | kurta
+   colors: filter families — red | pink | orange | green | blue
+   img: first image is the main photo; extra images appear in quick view and on hover. */
+window.WB_PRODUCTS = [
+  { id: 'wb-001', name: 'Maroon Check Half Saree', cat: 'half', colors: ['red', 'green'], price: 6490, mrp: 7490,
+    desc: 'Gold-lined maroon check over an olive pavadai with a lotus-motif zari border.',
+    includes: ['Half saree (pallu)', 'Pavadai (skirt)', 'Blouse'], swatch: ['#7B1E2B', '#6C6A49', '#B39A55'],
+    img: ['img/halfsaree-pose.jpg', 'img/halfsaree-front.jpg'] },
+  { id: 'wb-002', name: 'Navy Pleats & Maroon Check', cat: 'skirt', colors: ['blue', 'red'], price: 3490,
+    desc: 'Deep navy skirt scattered with gold buttas, with a puff-sleeve blouse and scalloped neckline.',
+    includes: ['Pleated skirt', 'Puff-sleeve blouse'], swatch: ['#142194', '#7B1E2B', '#B39A55'], img: ['img/set-navy.jpg'] },
+  { id: 'wb-003', name: 'Mint Pleats & Scalloped Blouse', cat: 'skirt', colors: ['green', 'red'], price: 3490,
+    desc: 'Soft mint check skirt with a red butta blouse, edged in mint scallops at neck and sleeves.',
+    includes: ['Pleated skirt', 'Scalloped blouse'], swatch: ['#A8C8B2', '#9A1B2A', '#B39A55'], img: ['img/set-mint.jpg'] },
+  { id: 'wb-004', name: 'Olive Pleats & Cream Collar Top', cat: 'skirt', colors: ['green'], price: 3290,
+    desc: 'Printed olive-green pleated skirt with a cream silk crop top and a notched collar.',
+    includes: ['Pleated skirt', 'Collared crop top'], swatch: ['#7A9B1E', '#F2E6C4'], img: ['img/skirt-olive.jpg'] },
+  { id: 'wb-005', name: 'Navy Check Anarkali, Kalamkari Dupatta', cat: 'anarkali', colors: ['blue', 'red'], price: 4590, mrp: 5290,
+    desc: 'Gold-checked navy anarkali with a red hem and a red-bordered kalamkari dupatta.',
+    includes: ['Anarkali', 'Kalamkari dupatta'], swatch: ['#2A2F6B', '#B3261E', '#F2E6C4'], img: ['img/anarkali-navy.jpg'] },
+  { id: 'wb-006', name: 'Saffron Anarkali, Peacock Kalamkari', cat: 'anarkali', colors: ['orange'], price: 4590,
+    desc: 'Saffron butta anarkali with a peacock-and-vine kalamkari dupatta in orange and violet.',
+    includes: ['Anarkali', 'Kalamkari dupatta'], swatch: ['#E8761B', '#8A6BC4', '#E3C45B'], img: ['img/anarkali-saffron.jpg'] },
+  { id: 'wb-007', name: 'Teal Anarkali, Pink Kalamkari', cat: 'anarkali', colors: ['green', 'pink'], price: 4390,
+    desc: 'Scalloped-neck teal anarkali with a bright pink kalamkari dupatta of birds and leaves.',
+    includes: ['Anarkali', 'Kalamkari dupatta'], swatch: ['#1E7C8C', '#D6417F', '#8FD14F'], img: ['img/anarkali-teal.jpg'] },
+  { id: 'wb-008', name: 'Magenta Anarkali, Storybook Kalamkari', cat: 'anarkali', colors: ['pink', 'blue'], price: 4690,
+    desc: 'Magenta anarkali with a sky-blue kalamkari dupatta painted with chariots and courtly scenes.',
+    includes: ['Anarkali', 'Kalamkari dupatta'], swatch: ['#A1226B', '#54A9D6', '#E3C45B'], img: ['img/anarkali-magenta.jpg'] },
+  { id: 'wb-009', name: 'Peacock-Green Temple Border Anarkali', cat: 'anarkali', colors: ['green', 'pink'], price: 4490,
+    desc: 'Magenta-and-gold temple border on the yoke and hem of a peacock-green anarkali, with matching dupatta.',
+    includes: ['Anarkali', 'Dupatta'], swatch: ['#1F7A5C', '#A1226B', '#B39A55'], img: ['img/anarkali-temple.jpg'] },
+  { id: 'wb-010', name: 'Wine Anarkali, Lotus Kalamkari', cat: 'anarkali', colors: ['red', 'green'], price: 4690,
+    desc: 'Wine anarkali with an olive-green kalamkari dupatta of pink lotuses and peacocks.',
+    includes: ['Anarkali', 'Kalamkari dupatta'], swatch: ['#5E1424', '#7E8C4A', '#E8A0B8'], img: ['img/anarkali-wine.jpg'] },
+  { id: 'wb-011', name: 'Mint Kurta, Printed Palazzo', cat: 'kurta', colors: ['green', 'pink'], price: 2890,
+    desc: 'Mint butta kurta with a lilac printed palazzo and a block-print dupatta.',
+    includes: ['Kurta', 'Palazzo', 'Dupatta'], swatch: ['#6FCDB0', '#B79AD6', '#B3261E'], img: ['img/kurta-mint.jpg'] },
+  { id: 'wb-012', name: 'Red Kurta, Indigo Palazzo', cat: 'kurta', colors: ['red', 'blue'], price: 2890,
+    desc: 'Scalloped-neck red kurta with an indigo printed palazzo and a cream kalamkari dupatta.',
+    includes: ['Kurta', 'Palazzo', 'Dupatta'], swatch: ['#C8102E', '#2C4E8F', '#E9D3B4'], img: ['img/kurta-red.jpg'] },
+  { id: 'wb-013', name: 'Green Butta Kurta, Rust Palazzo', cat: 'kurta', colors: ['green', 'orange'], price: 2790,
+    desc: 'Bottle-green kurta with floral buttas and a rust-and-plum printed palazzo.',
+    includes: ['Kurta', 'Palazzo', 'Dupatta'], swatch: ['#1E7A4A', '#D2693A', '#6B2B5E'], img: ['img/kurta-green.jpg'] },
+  { id: 'wb-014', name: 'Olive & Wine Colour-block Kurta', cat: 'kurta', colors: ['green', 'pink'], price: 2690,
+    desc: 'Olive and wine colour-block kurta with a sheer striped dupatta.',
+    includes: ['Kurta', 'Dupatta'], swatch: ['#7A8A1E', '#7E1F5E', '#E3C45B'], img: ['img/kurta-olive.jpg'] },
+  { id: 'wb-015', name: 'Maroon Check-panel Kurta', cat: 'kurta', colors: ['red'], price: 2690,
+    desc: 'Maroon kurta with gingham side panels and a matching dupatta.',
+    includes: ['Kurta', 'Dupatta'], swatch: ['#7B1E2B', '#F2E6E6', '#B39A55'], img: ['img/kurta-maroon.jpg'] }
+];
+window.WB_CATS = [['all', 'All'], ['half', 'Half sarees'], ['skirt', 'Skirt sets'], ['anarkali', 'Anarkali sets'], ['kurta', 'Kurta sets']];
+window.WB_COLOURS = [['all', 'All colours', 'conic-gradient(#142194,#D6417F,#E8761B,#1F7A5C,#142194)'], ['red', 'Maroon & red', '#8E1B2E'], ['pink', 'Pink & magenta', '#C0357A'], ['orange', 'Saffron', '#E8761B'], ['green', 'Green & teal', '#1F7A5C'], ['blue', 'Navy & blue', '#142194']];
